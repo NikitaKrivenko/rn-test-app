@@ -19,6 +19,6 @@ export default NavButton = (props) => {
 
 NavButton.propTypes = {
   text: PropTypes.string,
-  targetRoot: PropTypes.string,
-  onPress: PropTypes.func,
+  targetRoot: PropTypes.string.isRequired,
+  onPress: PropTypes.func.isRequired,
 };

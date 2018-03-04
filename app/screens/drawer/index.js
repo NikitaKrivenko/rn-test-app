@@ -49,8 +49,8 @@ class Drawer extends Component {
 }
 
 Drawer.propTypes = {
-  root: PropTypes.string,
-  changeRootRequest: PropTypes.func
+  root: PropTypes.string.isRequired,
+  changeRootRequest: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => {

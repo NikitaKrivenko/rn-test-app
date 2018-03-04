@@ -8,7 +8,7 @@ import {General} from './../../constants/text';
 export default List = (props) => {
   const {isLoading, items, isError, error, renderItem} = props;
 
-  const itemsWithKeys = items.map(item => {
+  const itemsWithKeys = items && items.map(item => {
     item.key = item.question_id;
 
     return item;
@@ -44,9 +44,9 @@ export default List = (props) => {
 }
 
 List.propTypes = {
-  items: PropTypes.array,
+  items: PropTypes.array.isRequired,
   isLoading: PropTypes.bool,
   isError: PropTypes.bool,
   error: PropTypes.string,
-  renderItem: PropTypes.func
+  renderItem: PropTypes.func.isRequired
 };

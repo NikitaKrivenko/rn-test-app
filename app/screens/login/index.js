@@ -78,7 +78,7 @@ class Login extends ValidationComponent {
 }
 
 Login.propTypes = {
-  login: PropTypes.func
+  login: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => {
