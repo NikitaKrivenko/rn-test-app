@@ -18,12 +18,9 @@ class Drawer extends Component {
   }
 
   navigationHandler(targetRoot) {
-    const {navigator, changeRootRequest, root} = this.props;
-    const shouldDispatchRootChange = targetRoot !== root;
+    const {navigator, changeRootRequest} = this.props;
 
-    if (shouldDispatchRootChange) {
-      changeRootRequest(navigator, targetRoot);
-    }
+    changeRootRequest(navigator, targetRoot);
   }
 
   render() {
@@ -49,14 +46,7 @@ class Drawer extends Component {
 }
 
 Drawer.propTypes = {
-  root: PropTypes.string,
   changeRootRequest: PropTypes.func
-};
-
-const mapStateToProps = state => {
-  return {
-    root: state.navigation.root
-  };
 };
 
 const mapDispatchToProps = dispatch => {
@@ -67,4 +57,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Drawer);
+export default connect(null, mapDispatchToProps)(Drawer);

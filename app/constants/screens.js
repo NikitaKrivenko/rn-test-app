@@ -1,3 +1,4 @@
+import {Navigation} from './text';
 
 export const screensNames = {
   login: 'login',
@@ -16,16 +17,19 @@ export const sideMeuButtonsConfig = [
 export default screensConfig = {
   [screensNames.home]: {
     screen: 'demoApp.Home',
+    title: Navigation.home,
     leftButtons: sideMeuButtonsConfig
   },
 
   [screensNames.logout]: {
     screen: 'demoApp.Logout',
+    title: Navigation.logout,
     leftButtons: sideMeuButtonsConfig
   },
 
   [screensNames.stackOverflow]: {
     screen: 'demoApp.StackOverflow',
+    title: Navigation.stackOverflow,
     leftButtons: sideMeuButtonsConfig
   },
 
