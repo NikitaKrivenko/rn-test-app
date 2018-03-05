@@ -36,11 +36,11 @@ class StackOverflow extends Component {
 }
 
 StackOverflow.propTypes = {
-  items: PropTypes.array,
+  items: PropTypes.array.isRequired,
   isLoading: PropTypes.bool,
   isError: PropTypes.bool,
   error: PropTypes.string,
-  loadQuestions: PropTypes.func
+  loadQuestions: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => {

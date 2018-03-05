@@ -19,5 +19,5 @@ BaseButton.propTypes = {
   text: PropTypes.string,
   underlayColor: PropTypes.string,
   style: PropTypes.object,
-  onPress: PropTypes.func
+  onPress: PropTypes.func.isRequired
 };

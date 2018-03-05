@@ -19,5 +19,5 @@ export default PrimaryButton = (props) => {
 
 PrimaryButton.propTypes = {
   text: PropTypes.string,
-  onPress: PropTypes.func,
+  onPress: PropTypes.func.isRequired,
 };

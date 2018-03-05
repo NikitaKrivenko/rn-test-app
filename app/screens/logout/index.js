@@ -25,7 +25,7 @@ const Logout = ({logout}) => {
 };
 
 Logout.propTypes = {
-  logout: PropTypes.func
+  logout: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => {

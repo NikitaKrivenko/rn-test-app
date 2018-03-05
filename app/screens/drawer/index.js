@@ -46,7 +46,7 @@ class Drawer extends Component {
 }
 
 Drawer.propTypes = {
-  changeRootRequest: PropTypes.func
+  changeRootRequest: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => {

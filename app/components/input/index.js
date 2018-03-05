@@ -23,5 +23,5 @@ export default Input = (props) => {
 Input.propTypes = {
   validationErrors: PropTypes.array,
   placeholder: PropTypes.string,
-  onChangeText: PropTypes.func
+  onChangeText: PropTypes.func.isRequired
 };
